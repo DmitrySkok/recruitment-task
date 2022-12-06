@@ -5,7 +5,7 @@ import clsx from 'clsx';
 const PageNotFound = () => {
 
 	return (
-		<div className={styles.root}>
+		<div>
 			<div className={styles.circles}>
 				<p>404
 					<br />
