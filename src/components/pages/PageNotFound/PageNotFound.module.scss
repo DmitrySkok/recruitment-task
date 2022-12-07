@@ -16,17 +16,16 @@
 .circles {
 	background: #fff;
 	text-align: center;
-	position: relative;
-	margin-top: -60px;
+	margin-top: 30px;
 }
 
 .circles p {
 	font-size: 240px;
 	color: #fff;
-	padding-top: 60px;
 	position: relative;
 	z-index: 9;
 	line-height: 100%;
+	margin: auto;
 }
 
 .circles p small {
