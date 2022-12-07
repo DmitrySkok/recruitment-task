@@ -1,0 +1,50 @@
+@import '../../../styles/settings.scss';
+
+.button {
+  
+  border-radius: $radius;
+  border: none;
+  background-color: $main-blue-800;
+  color: white;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  
+  &.small {
+    width: 160px;
+    height: 26px;
+    a {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &.big {
+    width: 189px;
+    height: 36px;
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &.transparent  {
+    background-color: unset;
+  }
+}
+
+/* CSS */
+/* .button-65 {
+  appearance: none;
+  backface-visibility: hidden;
+  border-style: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+} */

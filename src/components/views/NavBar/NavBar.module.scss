@@ -1,1 +1,33 @@
 @import '../../../styles/settings.scss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+
+  .list {
+    display: flex;
+    flex: auto;
+    max-width: 245px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    a {
+      color: $main-blue-500;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .root {
+    flex-direction: column;
+
+    .list {
+      flex-direction: column;
+    }
+  }
+}
