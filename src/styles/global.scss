@@ -23,3 +23,22 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+  position: absolute;
+  &.header, &.footer {
+    left: 47.4%;
+  }
+}
+
+@media (max-width: 760px) {
+  .logo {
+    &.header {
+      left: 1%;
+      top: 2%;
+    }
+  }
+}
+

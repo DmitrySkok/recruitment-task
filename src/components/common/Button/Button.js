@@ -1,21 +1,40 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './Button.module.scss';
 import clsx from 'clsx';
-import { useNavigate  } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 const Button = props => {
-  const navigate = useNavigate ();
+
+  const navigate = useNavigate();
+
+  const bigBtn = props.big;
+  const trnBtn = props.transparent;
+  const children = props.children;
+  const path = props.path;
 
   const handleClick = () => {
-    navigate(props.path);
+    navigate(path);
   }
 
   return (
-    <div>
-      <button onClick={handleClick} 
-      className={clsx(styles.button, props.big ? styles.big : styles.small, props.transparent && styles.transparent)}
-      >{props.children}</button>
-    </div>
+    <button onClick={handleClick}
+      className={clsx(
+        styles.button,
+        bigBtn ? styles.big : styles.small,
+        trnBtn && styles.transparent
+      )}
+    >
+      {children}
+    </button>
   );
 };
+
+Button.propTypes = {
+  bigBtn: PropTypes.bool,
+  trnBtn: PropTypes.bool,
+  children: PropTypes.string,
+  path: PropTypes.string,
+}
 
 export default Button;

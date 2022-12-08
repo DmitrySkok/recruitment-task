@@ -23,12 +23,100 @@
   }
 }
 
+// hamburger
+
+.hamburger {
+  display: none;
+  @include btn(90%, 0%);
+
+  .iconLeft {
+    @include icon(4px, 15px);
+    left: 0px;
+
+    &:before {
+      @include icon-before(4px, 15px, -13px);
+    }
+
+    &:after {
+      @include icon-after(4px, 15px, 13px);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .iconRight {
+    @include icon(4px, 15px);
+    left: 15px;
+
+    &:before {
+      @include icon-before(4px, 15px, -13px);
+    }
+
+    &:after {
+      @include icon-after(4px, 15px, 13px);
+    }
+  }
+
+  &.open {
+    .iconLeft {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+      }
+
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+      }
+    }
+
+    .iconRight {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+      }
+
+      &:after {
+        transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// media
+
 @media (max-width: 760px) {
+
   .root {
     flex-direction: column;
 
+    div.navBtn {
+      display: none;
+      &.open {
+        display: block;
+      }
+    }
+
+    .hamburger {
+      display: block;
+    }
+
     .list {
+      display: none;
       flex-direction: column;
+      &.open {
+        display: flex;
+        margin-top: 20px;
+      }
     }
   }
 }
