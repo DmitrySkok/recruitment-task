@@ -13,7 +13,7 @@ $font-text: 'Roboto', sans-serif;
 //other variables
 $radius: 2px;
 $base-size: 16px;
-$transition: all 0.5s;
+$transition: 0.5s;
 
 //mixins
 
@@ -24,11 +24,11 @@ $transition: all 0.5s;
   height: 30px;
   top: $top;
   left: $left;
-  transition-duration: 0.5s;
+  transition-duration: $transition;
 }
 
 @mixin icon($height, $width) {
-  transition-duration: 0.5s;
+  transition-duration: $transition;
   position: absolute;
   height: $height;
   width: $width;
@@ -37,7 +37,7 @@ $transition: all 0.5s;
 }
 
 @mixin icon-before($height, $width, $top) {
-  transition-duration: 0.5s;
+  transition-duration: $transition;
   position: absolute;
   width: $width;
   height: $height;
@@ -47,7 +47,7 @@ $transition: all 0.5s;
 }
 
 @mixin icon-after($height, $width, $top) {
-  transition-duration: 0.5s;
+  transition-duration: $transition;
   position: absolute;
   width: $width;
   height: $height;

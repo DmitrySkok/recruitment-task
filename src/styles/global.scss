@@ -28,8 +28,17 @@ a {
   font-size: 26px;
   line-height: 38px;
   position: absolute;
+  color: $logo-primary;
   &.header, &.footer {
     left: 47.4%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo {
+    &.header {
+      left: 47.2%;
+    }
   }
 }
 

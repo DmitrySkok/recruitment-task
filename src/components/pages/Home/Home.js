@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../../views/Header/Header';
+import Hero from '../../views/Hero/Hero';
+import styles from './Home.module.scss';
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <Header />
-      <h1>Welcome to home page</h1>
+      <Hero />
     </div>
   );
 };

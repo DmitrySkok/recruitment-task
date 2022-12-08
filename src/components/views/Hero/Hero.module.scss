@@ -1,0 +1,43 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  background: no-repeat right top url('../../../../public/images/heroImage.png');
+  margin-top: 204px;
+  min-height: 782px;
+  padding-top: 55px;
+  padding-left: 91px;
+  .textBlock {
+    max-width: 539px;
+    min-height: 132px;
+
+    h1 {
+      -webkit-text-stroke: 1px black;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: calc($base-size + 2px);
+      line-height: 30px;
+      color: $main-blue-500;
+    }
+
+    &Buttons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 408px;
+      margin-top: 69px;
+    }
+  }
+}
+
+@media (max-width: 1234px) {
+  .root {
+    background: no-repeat top right/30% url('../../../../public/images/heroImage.png');
+  }
+}
+
+@media (max-width: 760px) {
+  .root {
+    background: none;
+  }
+}
