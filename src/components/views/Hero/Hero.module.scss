@@ -10,17 +10,11 @@
     max-width: 539px;
     min-height: 132px;
 
-    // :nth-child(3) {
-    //   margin-top: -4px;
-    // }
-
     h1 {
       -webkit-text-stroke: 1px black;
-      // margin-bottom: 20px;
     }
 
     p {
-      font-weight: 400;
       font-size: calc($base-size + 2px);
       line-height: 30px;
       color: $main-blue-500;
