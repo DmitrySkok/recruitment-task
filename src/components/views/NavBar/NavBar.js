@@ -23,7 +23,6 @@ const NavBar = () => {
         role='button' 
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
-          console.log(isNavExpanded);
         }}
         className={clsx(styles.hamburger, isNavExpanded && styles.open)}
       >
