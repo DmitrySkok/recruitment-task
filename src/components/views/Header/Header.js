@@ -6,7 +6,7 @@ import Container from '../../common/Container/Container'
 const Header = () => {
   return (
     <div className={styles.root}>
-      <Container maxWidth={'1110px'}>
+      <Container>
         <NavBar />
       </Container>
     </div>

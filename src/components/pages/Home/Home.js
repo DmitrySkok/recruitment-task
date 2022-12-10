@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../views/Footer/Footer';
 import Header from '../../views/Header/Header';
 import Hero from '../../views/Hero/Hero';
 import Intro from '../../views/Intro/Intro';
@@ -14,6 +15,7 @@ const Home = () => {
       <UndrawMobLog />
       <Intro />
       <Pricing />
+      <Footer />
     </div>
   );
 };

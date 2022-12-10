@@ -16,6 +16,10 @@
     font-weight: 500;
     font-size: calc($base-size - 4px);
     line-height: 18px;
+    
+    &FooterComp {
+      width: 109px;
+    }
   }
 
   &.bigBtn {

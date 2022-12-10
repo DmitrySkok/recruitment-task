@@ -1,0 +1,62 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  background-color: #E7ECFF;
+  padding: 67px 0 26px  0;
+
+  hr {
+    color: #CDD1D4;
+    size: 1px;
+  }
+
+  .upperSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+
+    p {
+      font-weight: 500;
+      font-size: calc($base-size - 2px);
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+
+  .lowerSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+
+    .menu {
+      display: flex;
+      max-width: 245px;
+      flex: auto;
+      justify-content: space-between;
+      padding: 0;
+
+      a {
+        color: $main-blue-500;
+        font-size: calc($base-size - 2px);
+        line-height: 24px;
+      }
+    }
+
+    .socialMedia {
+      display: flex;
+      max-width: 241px;
+      flex: auto;
+      justify-content: space-between;
+
+      li {
+        width: 16px;
+        height: 16px;
+        a {
+          color: #B0B8BC;
+          font-size: calc($base-size);
+        }
+      }
+    }
+
+  }
+}

@@ -10,7 +10,8 @@ const Button = props => {
 
   const bigBtn = props.big;
   const trnBtn = props.transparent;
-  const pricingComp = props.pricingComp
+  const pricingComp = props.pricingComp;
+  const footerComp = props.footerComp;
   const children = props.children;
   const path = props.path;
 
@@ -24,6 +25,7 @@ const Button = props => {
         styles.button,
         bigBtn ? styles.bigBtn : styles.smallBtn,
         pricingComp && styles.bigBtnPricingComp,
+        footerComp && styles.smallBtnFooterComp,
         trnBtn && styles.transparent
       )}
     >
@@ -37,6 +39,8 @@ Button.propTypes = {
   trnBtn: PropTypes.bool,
   children: PropTypes.string,
   path: PropTypes.string,
+  pricingComp: PropTypes.bool,
+  footerComp: PropTypes.bool,
 }
 
 export default Button;
