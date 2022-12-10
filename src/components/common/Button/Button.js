@@ -10,6 +10,7 @@ const Button = props => {
 
   const bigBtn = props.big;
   const trnBtn = props.transparent;
+  const pricingComp = props.pricingComp
   const children = props.children;
   const path = props.path;
 
@@ -21,7 +22,8 @@ const Button = props => {
     <button onClick={handleClick}
       className={clsx(
         styles.button,
-        bigBtn ? styles.big : styles.small,
+        bigBtn ? styles.bigBtn : styles.smallBtn,
+        pricingComp && styles.bigBtnPricingComp,
         trnBtn && styles.transparent
       )}
     >

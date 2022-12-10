@@ -10,7 +10,7 @@
   padding: 0;
   cursor: pointer;
   
-  &.small {
+  &.smallBtn {
     width: 160px;
     height: 26px;
     font-weight: 500;
@@ -18,12 +18,18 @@
     line-height: 18px;
   }
 
-  &.big {
+  &.bigBtn {
     width: 189px;
     height: 36px;
     font-weight: 500;
     font-size: $base-size;
     line-height: 26px;
+    
+    &PricingComp {
+      font-size: calc($base-size - 2px);
+      line-height: 24px;
+      height: 32px;
+    }
   }
 
   &.transparent  {
