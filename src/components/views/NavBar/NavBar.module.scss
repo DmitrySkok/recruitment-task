@@ -93,6 +93,12 @@
 
 // media
 
+@media (max-width: 940px) {
+  .root {
+    padding: 0 5px;
+  }
+}
+
 @media (max-width: 760px) {
 
   .root {
@@ -102,11 +108,18 @@
       display: none;
       transform: translateY(-150%);
       animation: ani 1s forwards;
+
       &.open {
         display: block;
+
         @keyframes ani {
-          0% {transform: translateY(-150%);}
-          100% {transform: translateY(0);}
+          0% {
+            transform: translateY(-150%);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
         }
       }
     }
@@ -118,16 +131,22 @@
     .list {
       display: none;
       flex-direction: column;
+
       &.open {
         display: flex;
         margin-top: 20px;
         transform: translateY(-150%);
         animation: ani 1s forwards;
-        
-      @keyframes ani {
-        0% {transform: translateY(-150%);}
-        100% {transform: translateY(0);}
-      }
+
+        @keyframes ani {
+          0% {
+            transform: translateY(-150%);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
       }
     }
   }

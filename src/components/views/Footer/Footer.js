@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className={styles.root}>
       <Container>
-        <>
+        <footer>
           <div className={styles.upperSection}>
             <div>
               <p>©2020 Yourcompany</p>
@@ -54,7 +54,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </>
+        </footer>
       </Container>
     </div>
   )

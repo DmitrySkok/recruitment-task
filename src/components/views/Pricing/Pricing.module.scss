@@ -23,9 +23,11 @@
 
   .priceBlock {
     margin-top: 21px;
+
     h1 {
       color: $main-blue-700;
     }
+
     p {
       margin: 0;
       line-height: 26px;
@@ -35,9 +37,24 @@
 
   .btnBlock {
     margin-top: 50px;
+
     p {
       font-size: calc($base-size - 2px);
       margin: 13px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .root {
+    padding: 40px 10px 170px 10px;
+
+    .wrapper {
+      margin: 0;
+    }
+
+    .btnBlock {
+      margin-top: 15px;
     }
   }
 }

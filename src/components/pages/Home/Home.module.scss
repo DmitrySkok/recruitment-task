@@ -4,3 +4,9 @@
   overflow: auto;
   background: no-repeat top right/76.3% url('../../../../public/images/bodybackground.png');
 }
+
+@media (max-width: 940px) {
+  .root {
+    background: none;
+  }
+}

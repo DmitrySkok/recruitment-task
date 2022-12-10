@@ -5,8 +5,7 @@ import Container from '../../common/Container/Container';
 const Intro = () => {
   return (
     <Container maxWidth={'1102px'}>
-    <div className={styles.root}>
-      
+      <div className={styles.root}>
         <div className={styles.textBlock}>
           <h2>Light, Fast & Powerful</h2>
           <div className={styles.pragraphBlock}>
@@ -22,8 +21,7 @@ const Intro = () => {
             </p>
           </div>
         </div>
-      
-    </div>
+      </div>
     </Container>
   )
 }

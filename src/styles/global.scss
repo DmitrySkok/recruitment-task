@@ -1,7 +1,9 @@
 @import './settings.scss';
 @import "./typography.scss";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,7 +32,9 @@ a {
   line-height: 38px;
   position: absolute;
   color: $logo-primary;
-  &.header, &.footer {
+
+  &.header,
+  &.footer {
     left: 47.4%;
   }
 }
@@ -43,6 +47,13 @@ a {
   }
 }
 
+@media (max-width: 940px) {
+  body {
+    background: no-repeat center center fixed url('../../public/images/mobileBackground.png');
+    text-align: center;
+  }
+}
+
 @media (max-width: 760px) {
   .logo {
     &.header {
@@ -51,4 +62,3 @@ a {
     }
   }
 }
-

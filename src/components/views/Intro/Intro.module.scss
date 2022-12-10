@@ -6,6 +6,7 @@
   background: no-repeat 3.5% top url('../../../../public/images/undrawHappyNews_hxmt.png');
   padding-bottom: 167px;
   margin-top: 57px;
+
   .textBlock {
     max-width: 445px;
     margin-top: 50px;
@@ -17,9 +18,16 @@
 
     .pragraphBlock {
       margin-top: 16px;
+
       :nth-child(2) {
         margin-top: 10px;
       }
     }
+  }
+}
+
+@media (max-width: 940px) {
+  .root {
+    background: none;
   }
 }

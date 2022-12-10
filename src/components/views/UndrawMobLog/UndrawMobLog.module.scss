@@ -4,6 +4,7 @@
   margin-top: 120px;
   padding-bottom: 162px;
   background: no-repeat 84.9% 1% url('../../../../public/images/undrawMobLog_ikmv.png');
+
   .textBlock {
     max-width: 540px;
     min-height: 486px;
@@ -32,11 +33,34 @@
           font-weight: 500;
           margin-top: 0px;
         }
+
         .smallParagraph {
           font-size: calc($base-size - 4px);
           line-height: 18px;
           margin-top: 7px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .root {
+    background: none;
+    margin-top: 0;
+    text-align: center;
+
+    .textBlockCards {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+
+      :nth-child(1) {
+        margin-bottom: 15px;
+      }
+
+      .card {
+        background: no-repeat center top url('../../../../public/images/icons/undrawMobLog_cardIcon.png');
       }
     }
   }

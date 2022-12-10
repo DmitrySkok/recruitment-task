@@ -19,8 +19,8 @@ const NavBar = () => {
       <div className={clsx(styles.navBtn, isNavExpanded && styles.open)}>
         <Button path={'/buy'}>Buy Now</Button>
       </div>
-      <div 
-        role='button' 
+      <div
+        role='button'
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}

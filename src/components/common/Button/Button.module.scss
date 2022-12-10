@@ -1,7 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .button {
-  
+
   border-radius: $radius;
   border: none;
   background-color: $main-blue-800;
@@ -9,14 +9,14 @@
   text-align: center;
   padding: 0;
   cursor: pointer;
-  
+
   &.smallBtn {
     width: 160px;
     height: 26px;
     font-weight: 500;
     font-size: calc($base-size - 4px);
     line-height: 18px;
-    
+
     &FooterComp {
       width: 109px;
     }
@@ -28,7 +28,7 @@
     font-weight: 500;
     font-size: $base-size;
     line-height: 26px;
-    
+
     &PricingComp {
       font-size: calc($base-size - 2px);
       line-height: 24px;
@@ -36,7 +36,7 @@
     }
   }
 
-  &.transparent  {
+  &.transparent {
     background-color: unset;
     color: $main-gray-700;
     border: 2px solid $main-gray-700;

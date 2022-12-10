@@ -9,8 +9,8 @@ const Pricing = () => {
         <div className={styles.textBlock}>
           <h2>A Price To Suit Everyone</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. 
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa.
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
           </p>
         </div>
